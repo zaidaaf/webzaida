@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tiempo.xsl"?>
+
+<clima>
+
+  <fecha_actual>
+    <dia>2025-04-18</dia>
+    <descripcion>Despejado</descripcion>
+    <temperatura>22°C</temperatura>
+    <maxima>24°C</maxima>
+    <minima>18°C</minima>
+    <icono>🌞</icono>
+  </fecha_actual>
+  
+  <pronostico>
+    <dia>
+      <fecha>2025-04-19</fecha>
+      <descripcion>Nublado</descripcion>
+      <temperatura>21°C</temperatura>
+      <maxima>23°C</maxima>
+      <minima>17°C</minima>
+      <icono>🌥️</icono>
+    </dia>
+    <dia>
+      <fecha>2025-04-20</fecha>
+      <descripcion>Tormenta</descripcion>
+      <temperatura>19°C</temperatura>
+      <maxima>21°C</maxima>
+      <minima>15°C</minima>
+      <icono>🌧️</icono>
+    </dia>
+    <dia>
+      <fecha>2025-04-21</fecha>
+      <descripcion>Parcialmente nublado</descripcion>
+      <temperatura>20°C</temperatura>
+      <maxima>22°C</maxima>
+      <minima>16°C</minima>
+      <icono>⛅</icono>
+    </dia>
+  </pronostico>
+
+</clima>

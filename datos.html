@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title>WEB ALUMNO VIRTUAL</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+          <div id="cabecera">
+
+            <table class="menu-navegacion">
+            <tr>
+              <td><a href="index.html">🏠 Inicio</a></td>
+              <td><a href="personal.html">👤 Datos Personales</a></td>
+              <td><a href="datos.html">📝 Formulario</a></td>
+              <td><a href="foro.html">💬 Foro</a></td>
+              <td><a href="tiempo.xml">🌦️ Tiempo</a></td>
+              
+            </tr>
+           </table>
+
+        </div>
+
+
+                <div id="izquierda">
+
+                   <h1>Formulario de Intereses Personales</h1>
+
+                    <p class="mensaje-formulario-divertido">
+                    😎 ¡Cuéntanos sobre ti! <br>
+                    Completar este formulario no dolerá... ¡lo prometo! 💻🎉
+                    </p>
+
+                  
+                  <div class="gifformulario">
+                   <img src="imagenes/formu.gif" alt="Clima animado" class="gif-clima-animado"/>
+                 </div>
+
+                </div>
+
+
+
+                <div id="derecha">
+
+                <form class="formulario" action="procesamiento.PHP" method="GET">
+                <!-- Cuadro de texto 1 -->
+                <div class="grupo-formulario">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <!-- Cuadro de texto 2 -->
+                <div class="grupo-formulario">
+                <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Botones de radio: Área de Interés -->
+                <div class="grupo-formulario">
+                <label>Área de Interés Profesional:</label>
+                <div class="opciones">
+                <label>
+                    <input type="radio" name="area" value="programacion" onclick="mostrarVideo('Programación')"> Programación
+                </label>
+                <label>
+                    <input type="radio" name="area" value="diseno" onclick="mostrarVideo('Diseño')"> Diseño
+                </label>
+                <label>
+                    <input type="radio" name="area" value="marketing" onclick="mostrarVideo('Marketing Digital')"> Marketing Digital
+                </label>
+                </div>
+            </div>
+
+            <!-- Casillas de verificación: Habilidades -->
+            <div class="grupo-formulario">
+            <label>Habilidades:</label>
+            <div class="opciones">
+                <label>
+                    <input type="checkbox" name="habilidades" value="html"> HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="habilidades" value="css"> CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="habilidades" value="javascript"> JavaScript
+                </label>
+            </div>
+        </div>
+
+        <!-- Botón de envío -->
+        <div class="grupo-formulario">
+            <button type="button" class="boton-envio" onclick="validarFormulario()">
+            Enviar Formulario 📤
+            </button>
+        </div>
+    </form>
+
+                </div>
+
+
+                <div id="pie">
+
+                 <p>© 2025 Curso Virtual de Programación</p>
+                 <a href="rss.xml" target="_blank">
+                   <img src="imagenes/rss-icon.png" alt="RSS" style="width:24px; height:24px; vertical-align: middle;"/>
+                 </a>
+
+                </div>
+
+<script>
+function validarFormulario() {
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (nombre === "") {
+        alert("Por favor, ingresa tu nombre completo.");
+        return;
+    }
+
+    if (!emailRegex.test(email)) {
+        alert("Por favor, ingresa un correo electrónico válido.");
+        return;
+    }
+
+    // Si todo es válido, se envía el formulario
+    document.querySelector(".formulario").submit();
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="0.91">
+   <channel>
+      <title>Canal RSS de Zaida Aracil</title>
+      <link>https://localhost/WEB_Zaida_Aracil/personal.html</link>
+      <description>Noticias y actualizaciones del curso de programación de Zaida Aracil</description>
+      <language>es-ES</language>
+
+      <item>
+         <title>Bienvenido al curso de programación</title>
+         <link>http://localhost/WEB_Zaida_Aracil/index.html</link>
+         <description>¡Hola! Comienza tu aventura en el mundo de la programación con nuestro curso. Aprende desde cero y conviértete en un   desarrollador web.</description>
+      </item>
+      <item>
+         <title>Noticias actualizadas</title>
+         <link>http://localhost/WEB_Zaida_Aracil/temas.html#foro-modulo-2</link>
+         <description>El curso ha sido recientemente actualizado con contenidos clave para mejorar tus habilidades en desarrollo web. Se incluye   un nuevo tema sobre CSS Grid, se habilitó el foro de consultas del módulo 2, y se abrió el plazo para el primer proyecto práctico. Además, se incorporan temas esenciales como el uso correcto de Git y GitHub, las mejores prácticas de programación, y un vistazo a las tendencias web de 2025, todo diseñado para impulsar tu aprendizaje y prepararte para los retos del mundo digital</description>
+      </item>
+
+      <item>
+         <title>Lenguaje de programación más demandados</title>
+         <link>https://www.cursosfemxa.es/noticias-escuelas-profesionales/los-perfiles-tecnologicos-mas-demandados-por-las-empresas</link>
+         <description>La página de Cursos Femxa resalta los perfiles tecnológicos más buscados por las empresas, como la ciberseguridad y el    desarrollo de software. Destaca la importancia de adquirir habilidades en estos campos para mejorar la empleabilidad.</description>
+      </item>
+      <item>
+         <title>Noticias de Programación - Cursos y Novedades</title>
+         <link>https://www.robodemia.es/ultimas-noticias-noticias-de-programacion-y-robotica</link>
+         <description>Mantente al día con las últimas noticias, cursos y novedades en el mundo de la programación. Descubre nuevas herramientas y tecnologías.</description>
+      </item>
+   </channel>
+</rss>
